@@ -16,8 +16,8 @@ namespace Factories
         static string server = "localhost";
         static string db = "sakila_db"; //Change to your schema name
         static string port = "3306"; //Potentially 8889
-        static string user = "root";
-        static string pass = "root";
+        static string user = "admin";
+        static string pass = "pass";
         internal static IDbConnection Connection {
             get {
                 return new MySqlConnection($"Server={server};Port={port};Database={db};UserID={user};Password={pass};SslMode=None");
@@ -284,13 +284,7 @@ namespace Factories
 
 
 
-    
-
-    
-
-
-
-   //////////////////////////////
+   
             // GET ALLS  //
 
 
@@ -375,14 +369,7 @@ namespace Factories
 
 
 
-   
-
-
-
-
-    //////////////////////////////////////////////////
-    //////////////////////////////////////////////////
-    //////////////////////////////////////////////////
+  
             //    DELETE ALL'S 
 
 

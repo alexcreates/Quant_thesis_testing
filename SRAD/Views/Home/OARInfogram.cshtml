@@ -1,0 +1,33 @@
+<div id="OAR">
+    <h3>OAR</h3>
+    <i>oscillating average range</i><br><br>
+    <p>
+        The oscillating average range uses multiple historic data points<br>
+        of support points and resistance points in a mean reversion<br>
+        or a channel trend.<br>
+        <div id="collecttext">a collection of...</div> 
+        <p id="tinyText">x = (resPoint - supPoint)<br><br>
+                         x represents one data point entry.<br> <br>
+                         then we find the summation of all data points.<br>
+                         and divide by the amount of data points entered. <br>
+                         The more data points entered the more accurate the result. <br>
+                         Data entry is key in this approach.<br>
+        </p>
+
+        <div id="OARimage">
+            <img src="~/images/OAR.png">            
+        </div>
+
+        This calculation shows us the probable range<br>
+        of gain on either the upside or the downside of a stock.<br>
+        The evalution will give us the average of each data point<br>
+        entered into the database.<br> When you go to the page to add<br>
+        resPoint and supPoint's you will see the total result<br>
+        of that relative stock. This approach will take time<br>
+        and recording historical data points<br>
+        for known runners.
+    </p>
+     <form asp-controller="Home" asp-action="ShowOARView" method="post">
+        <button type="submit">O A R</button>
+    </form>
+</div>

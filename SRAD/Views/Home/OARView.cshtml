@@ -1,0 +1,80 @@
+@model Models.Stock
+Please enter the symbol to calculate:
+
+<div class="Menu">
+<img src="~/images/menu.png">
+</div>
+
+
+
+<link rel="stylesheet" href="css/OARstyles.css">
+<div id="wrapper">
+    <h1>O A R</h1>
+    
+    <div class="createRecordLink">
+        <a href="ShowStockCreateView">create new record</a>        
+    </div>
+     <div class="OarResultsLink">
+        <a href="ShowAllOARResultsView">OAR results</a>        
+    </div>
+
+
+   
+
+    
+    
+
+    <p id="tinytext"><i>oscillating average range</i></p>
+    <div class="FormToSubmit">
+    
+        
+        <form asp-controller="Home" asp-action="UpdateResAndSupPoints" method="post">
+            <span asp-validation-for="Symbol"></span>
+                <label asp-for="Symbol">symbol</label>
+                <input asp-for="Symbol"/><br>
+            <span asp-validation-for="SupPoint"></span>
+                <label asp-for="SupPoint">supPoint</label>
+                <input asp-for="SupPoint" placeholder=""/><br>
+            <span asp-validation-for="ResPoint"></span>
+                <label asp-for="ResPoint">resPoint</label>
+                <input asp-for="ResPoint" placeholder=""/><br><br><br>
+            <button type="submit">update</button>
+        </form>
+        
+        
+
+
+
+
+<div id="division"></div>
+<div id="division2"></div>
+<div id="division3"></div>
+
+
+    </div>
+    <p id="OarDescription">
+        
+      
+        <p id="smalldescription">* these are the three possible channels a mean reverting osciallation is occuring in</p><br>
+        <br>
+        <br>
+        <p id="NextBodyText">
+            An oscillation will typically (over time) form a trending channel.<br> 
+            The channel is identified by recognizing two data points, <br>
+            <i>Support</i> & <i>Resistance</i>
+
+            <br>
+            Support and resistance points are the common high (resistance) and the common low (support) <br>
+            creating identifiable bounce points.<br>
+            A common and sound theory in the stock market is that the more the oscillation tests these two points <br>
+            the stronger and more relavent they become.  
+        </p>
+    </p>
+
+    
+<img src="~/images/WaterOAR.png">
+
+
+</div>
+
+

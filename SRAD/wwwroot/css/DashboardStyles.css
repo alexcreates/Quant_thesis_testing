@@ -1,0 +1,160 @@
+#OpenVolume {
+    margin-top: 65px;
+}
+
+#division1 {
+    background-color: black;
+    height: 2000px;
+    width: 950px;
+    display: inline-block;
+}
+
+.OAR {
+    color: white;
+    margin-top: -1970px;
+    margin-left: 55px;
+    font-size: 22px;
+    font-weight: 100;
+}
+h3 {
+    font-size: 98px;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 25px;
+    margin-top: 31px;
+}
+
+i {
+    font-size: 17px;
+    margin-left: 20px;
+    color: rgb(183, 183, 183);
+    letter-spacing: 1.5pt;
+}
+
+.OAR p {
+    letter-spacing: .8pt;
+}
+
+.OAR button {
+    margin-left: 362px;
+    height: 45px;
+    width: 180px;
+    margin-top: -119px;
+    position: absolute;
+}
+
+#tinyText {
+    font-size: 12px;
+    color: white;
+}
+
+img {
+    width: 227px;
+    margin-left: 348px;
+    margin-top: -548px;
+}
+
+button {
+    width: 120px;
+   
+    border-radius: 3pt;
+    background-color: black;
+    color: white;
+}
+
+#collecttext {
+    font-size: 15px;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-left: 52px;
+}
+
+
+.OpenVol {
+    margin-top: 100px;
+}
+
+.OpenVol h3 {
+    font-size: 60px;
+    margin-left: 43px;
+}
+
+.OpenVol i {
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-left: 83px;
+    font-size: 14px;
+}
+
+.OpenVol p {
+    color: white;
+    margin-left: 52px;
+    font-weight: 100;
+    width: 600px;
+    margin-top: 13px;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+.OpenVol button {
+    margin-left: 425px;
+    height: 45px;
+    width: 180px;
+    margin-top: -22px;
+    position: absolute;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+.OpenVol img {
+    width: 227px;
+    margin-left: 391px;
+    margin-top: -557px;
+}
+
+.TargetCharts {
+    margin-top: 153px;
+}
+
+.TargetCharts h3 {
+    font-size: 60px;
+    margin-left: 43px;
+}
+
+.TargetCharts i {
+    margin-left: 50px;
+    font-weight: 100;
+}
+
+.TargetCharts p {
+    color: white;
+    margin-left: 52px;
+    font-weight: 100;
+    width: 600px;
+    margin-top: 13px;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+
+.TargetCharts button {
+    margin-left: 425px;
+    height: 45px;
+    width: 180px;
+    margin-top: -22px;
+    position: absolute;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+.TargetCharts img {
+    width: 177px;
+    margin-left: 426px;
+    margin-top: -624px;
+}
+
+.image {
+    position: absolute;
+    margin-left: 100px;
+}

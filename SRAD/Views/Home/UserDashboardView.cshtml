@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="css/DashboardStyles.css">
+
+    <form asp-controller="Home" asp-action="ShowOpenVolumeView" method="post">
+        <button type="submit">Open Volume</button>
+    </form>
+
+
+
+
+<div id="division1"></div>
+
+
+
+
+
+<div class="OAR">
+    <h3>OAR</h3>
+    <i>oscillating average range</i><br><br>
+    <p>
+        The oscillating average range uses multiple historic data points<br>
+        of support points and resistance points in a mean reversion<br>
+        or a channel trend.<br>
+        <div id="collecttext">a collection of...</div> 
+        <p id="tinyText">x = (resPoint - supPoint)<br><br>
+    </p>
+
+        <div id="OARimage">
+            <img src="~/images/water.png">            
+        </div>
+
+        
+    </p>
+     <form asp-controller="Home" asp-action="ShowOARView" method="post">
+        <button type="submit">O A R</button>
+    </form>
+</div>
+
+
+
+<div class="OpenVol">
+    <h3>Open <br>Volume</h3>
+    <i>the correlation between volume growth and float</i><br><br>
+    <p>
+        With the open volume thesis we are flashing thousands of records 
+        to our database to show the correlation between the growth of volume 
+        and the symbol's float.<br><br>
+        
+        <div id="collecttext">double openVolResult = (currVolume / float);</div> 
+    </p>
+        <img src="~/images/openVolimg.png">           
+    </p>
+     <form asp-controller="Home" asp-action="ShowOpenVolumeView" method="post">
+        <button type="submit">open volume</button>
+    </form>
+</div>
+
+
+
+<div class="TargetCharts">
+    <h3>Target <br>Charts</h3>
+    <i>a calculator to determine reasonable targets of profit</i><br><br>
+    <p>
+        Target charts are created to show a reasonable range of profits 
+        for starting with a small account.
+        This is not something to trade based off of but to give an idea for 
+        target minimums.<br><br>
+    </p>
+        <img src="~/images/target.png">           
+    </p>
+     <form asp-controller="Home" asp-action="ShowTargetChartView" method="post">
+        <button type="submit">target charts</button>
+    </form>
+</div>
+
+
+
+
+

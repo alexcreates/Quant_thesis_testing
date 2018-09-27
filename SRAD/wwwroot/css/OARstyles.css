@@ -1,0 +1,227 @@
+#wrapper {
+    background: black;
+    color: white;
+    height: 1300px;
+    width: 863px;
+    position: absolute;
+}
+
+h1 {
+    font-size: 90px;
+    font-weight: 200;
+    margin-left: 207px;
+    margin-top: 60px;
+}
+
+p {
+    margin-left: 193px;
+    font-size: 22px;
+    color: rgb(146, 146, 146);
+    font-weight: 200;
+    width: 462px;
+    
+}
+ul {
+    margin-left: 429px;
+    font-size: 19px;
+    font-weight: 200;
+}
+
+#smalldescription {
+    margin-top: 30px;
+    margin-left: 519px;
+    font-size: 13px;
+    width: 300px;
+    color: rgb(210, 210, 210);
+    letter-spacing: 1pt;
+}
+
+#NextBodyText {
+    font-size: 19px;
+    text-align: left;
+    margin-left: 39px;
+    margin-top: 84px;
+    position: absolute;
+}
+
+form{
+    font-weight: 200;
+    padding-right: 38px;
+    padding-bottom: 113px;
+    margin-left: 567px;
+    position: absolute;
+    margin-top: -27px;
+}
+
+label {
+    font-weight: 200;
+    letter-spacing: 1pt;
+    margin-bottom: 20px;
+}
+
+input {
+    border-radius: 3px;
+    margin-left: 23px; 
+    color: black;
+}
+
+button {
+    background: transparent;
+    border-radius: 5px;
+    margin-left: 159px;
+    width: 140px;
+    height: 35px;
+    letter-spacing: 6px;
+    
+}
+
+img {
+    position: absolute;
+    width: 862px;
+    margin-top: -433px;
+    margin-left: 0px;
+    border-radius: 6px;
+}
+
+
+#tinytext {
+    font-size: 19px;
+    margin-left: 267px;
+    margin-bottom: 8px;
+}
+
+#FormToSubmit p{
+
+    font-weight: 100;
+    margin-left: 48px;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 132px;
+}
+
+#OarDescription {
+    margin-left: 74px;
+    text-align: left;
+    width: 441px;
+    font-size: 30px;
+    margin-top: 557px;
+    position: absolute;
+    }
+
+a {
+    color: white;
+
+}
+.NavigationButtons button{
+    margin-top: 450px;
+    margin-left: 27px;
+    position: absolute;
+    width: 255px;
+    letter-spacing: 2pt;
+    height: 53px;
+}
+
+.LookUpButton {
+    margin-top: 120px;
+    position: absolute;
+    letter-spacing: 2pt;
+    
+}
+
+
+.LookUpButton button{
+    width: 82px;
+    margin-left: 228px;
+    height: 25px;
+    letter-spacing: 2pt;
+    margin-top: 5px;
+}
+
+.Starwars {
+    margin-top: 300px;
+    margin-left: 450px;
+    position: fixed;
+}
+
+
+.createRecordLink a {
+    color: white;
+    margin-left: 75px;
+    margin-top: 194px;
+    letter-spacing: 2.7pt;
+    position: absolute;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+
+.OarResultsLink a {
+    color: white;
+    margin-left: 289px;
+    margin-top: 194px;
+    letter-spacing: 2.7pt;
+    position: absolute;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.NukeButton {
+    position: absolute;
+    margin-top: 200px;
+}
+
+
+.stocklist {
+    color: white;
+    font-size: -11px;
+    font-weight: 100;
+    margin-left: -75px;
+    margin-top: 160px;
+    position: absolute;
+}
+
+
+
+
+.stocklist p {
+    color: white;
+    font-size: -11px;
+    font-weight: 100;
+    margin-left: 595px;
+    margin-top: 52px;
+    padding-left: -21px;
+    position: absolute;
+}
+
+
+.FormToSubmit {
+    margin-left: -79px;
+    margin-top: 220px;
+    text-align: right;
+    position: absolute;
+}
+
+#division {
+    height: 2px;
+    margin-top: 282px;
+    margin-left: 215px;
+    width: 651px;
+    background-color: white;
+    position: absolute;
+}
+
+#division2 {
+    height: 1px;
+    margin-top: 289px;
+    margin-left: 271px;
+    width: 611px;
+    background-color: white;
+    position: absolute;
+}
+
+.Menu img {
+    margin-left: 65px;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+}

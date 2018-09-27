@@ -1,0 +1,56 @@
+
+
+<link rel="stylesheet" href="css/AllOARStyles.css">
+<div class="wrapper">
+    <h2>All OAR records</h2>
+    <div class="division"></div>
+    <div class="division2"></div>    
+    @{
+        if(@ViewBag.AllOARResults == null)
+        {
+            <h3> no records have been retrieved</h3>
+        }
+        else
+        {
+            <table>
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Company Name</th>
+                        <th>Last</th>
+                        <th>OAR</th>
+                        <th>updatedAt</th>
+                        <th>action</th>
+                    </tr>                
+                </thead>
+                <tbody>
+                    @foreach(var data in @ViewBag.AllOARResults)
+                    {
+                        <tr>
+                            <td><b>@data.Symbol</b></td>
+                            <td>@data.CompName</td>
+                            <td>@data.Last</td>
+                            <td>@data.Oar</td>
+                            <td>@data.updatedAt</td>
+                            <td><a href="ShowStockView/@data.idStocks"><i>view</i></a></td>                        
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    }<hr>
+
+    
+</div>
+<img src="~/images/horizontal.jpg">
+<div class="sec">
+    <img class="sec" src="~/images/sec.jpg">    
+</div>
+
+
+<div class="NukeButton">
+        <form asp-controller="Home" asp-action="TruncateStockandOarTable" method="post">
+            <button type="submit">Truncate Stock and Oar Tables</button>
+        </form>
+    </div>
+    

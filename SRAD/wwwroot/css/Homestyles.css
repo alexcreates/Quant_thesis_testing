@@ -1,0 +1,236 @@
+/* Body / Main */
+
+#header {
+    position: absolute;
+    margin-left: 65px;
+    margin-top: 120px;
+}
+
+
+#NarrativeBody {
+    height: 1104px;
+    width: 1080px;
+    margin-right: 0;
+    background-color: white;
+    margin-top: 900px;
+}
+
+
+body {
+    background-color: black;
+}
+
+
+
+/* Buttons  */
+
+
+#AboutUs button {
+    margin-left: 108px;
+    width: 214px;
+    height: 42px;
+    color: white;
+    letter-spacing: 3pt;
+    font-weight: 100;
+    margin-top: 618px;
+    margin-bottom: 20px;
+    margin-bottom: 30px;
+    position: absolute;
+    border-radius: 6px;
+    background: transparent;
+    margin-bottom: 20px;
+}
+
+#UserDashboardButton button {
+    margin-left: 108px;
+    width: 214px;
+    height: 42px;
+    margin-top: 771px;
+    margin-bottom: 20px;
+    color: white;
+    letter-spacing: 3pt;
+    font-weight: 100;
+    margin-bottom: 30px;
+    position: absolute;
+    border-radius: 6px;
+    background: transparent;
+    margin-bottom: 20px;
+}
+
+
+#InformationButton button {
+    margin-left: 108px;
+    width: 214px;
+    height: 42px;
+    color: white;
+    letter-spacing: 3pt;
+    font-weight: 100;
+    margin-top: 694px;
+    margin-bottom: 30px;
+    position: absolute;
+    border-radius: 6px;
+    background: transparent;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+/* Text  */
+
+
+h3 {
+    color: white;
+    font-size: 33px;
+}
+h1 {
+    color: white;
+    position: absolute;
+    width: 536px;
+    height: 510px;
+    letter-spacing: 1pt;
+    font-size: 35pt;
+    font-weight: 300;
+    margin-top: 206px;
+    margin-left: 37px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin-left: 20px;
+    font-size: 47px;
+    font-weight: 340;
+    margin-top: -66px;
+    padding-top: 90px;
+    text-align: center;
+    color: rgb(88, 88, 88);
+    letter-spacing: 8px;
+}
+
+p {
+    font-size: 20px;
+    text-align: left;
+    margin-top: -22px;
+    padding-top: 33px;
+    color: rgb(110, 110, 110);
+    letter-spacing: 1.5pt;
+}
+
+#lead {
+    text-align: center;
+    width: 900px;
+    margin-top: -1px;
+    margin-left: 93px;
+}
+
+i {
+    font-weight: 100;
+    font-size: 15px;
+}
+#MainBody {
+    background-color: white;
+}
+
+#BenchText {
+    color: white;
+    margin-top: -158px;
+    padding-bottom: 21px;
+    letter-spacing: 1.5pt;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: right;
+}
+
+#LeafLayer img {
+    width: 1083px;
+    margin-top: 38px;
+    height: 961px;
+    position: absolute;
+    margin-left: -2px;
+}
+
+#NarrativeBody img {
+    vertical-align: middle;
+    width: 148px;
+    margin-left: 92px;
+    position: absolute;
+    margin-top: 148px;
+}
+
+
+#lead {
+    width: 940px;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 90px;
+}
+
+
+
+#Developmenthead
+{
+    color: rgb(110, 110, 110);
+    text-align: left;
+    margin-top: 54px;
+    margin-left: 95px;
+    font-weight: 400;
+    font-size: 40px;
+    
+}
+
+#Developmentbody {
+    color: rgb(110, 110, 110);
+    margin-left: 177px;
+    font-weight: 200;
+    width: 315px;
+    margin-top: -39px;
+    text-align: right;
+}
+
+#Benchhead {
+    color: rgb(110, 110, 110);
+    text-align: left;
+    margin-top: -416px;
+    margin-left: 604px;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+
+#BenchText {
+    color: rgb(110, 110, 110);
+    margin-left: 605px;
+    font-weight: 200;
+    width: 315px;
+    margin-top: -9px;
+    text-align: left;
+}
+
+
+#bodytextmain {
+    color: white;
+    width: 994px;
+    font-size: 24px;
+    font-weight: 100;
+    margin-top: 37px;
+    margin-left: 48px;
+    text-align: center;
+}
+
+
+
+#bottomimg {
+    margin-left: 200px;
+    width: 700px;
+    margin-top: -77px;
+    padding-bottom: 50px;
+}
+
+
+
+.WhereToFindUs {
+   margin-left: 850px;
+    margin-top: -20px;
+}

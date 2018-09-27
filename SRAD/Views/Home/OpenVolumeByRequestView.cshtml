@@ -1,0 +1,16 @@
+<h3>@ViewBag.Results</h3>
+
+
+
+
+<form asp-controller="Home" asp-action="AddToOpenVolResults" method="post">
+    <span asp-validation-for="FloatRequested"></span>
+        <label asp-for="FloatRequested"></label>
+        <input asp-for="FloatRequested"/><br>
+    <button type="submit">add to study</button>
+</form>
+
+
+<form asp-controller="Home" asp-action="ShowOpenVolumeRecords" method="post">
+    <button type="submit">back</button>
+</form>

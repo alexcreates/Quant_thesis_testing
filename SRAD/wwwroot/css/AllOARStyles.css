@@ -1,0 +1,79 @@
+table {
+    margin-top: 200px;
+    position: absolute;
+    margin-left: 54px;
+}
+
+tr {
+    margin-left: 40px;
+}
+
+th {
+    font-size: 20px;
+    color: grey;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-left: 20px;
+    margin-top: 300px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+td {
+    
+    padding-bottom: 30px;
+}
+
+.wrapper {
+    margin-top: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(106, 106, 106);
+    letter-spacing: 2px;
+    
+}
+
+img {
+    border: 0;
+    width: 900px;
+    height: 299px;
+    border-radius: 10px;
+    margin-left: -61px;
+    margin-top: -234px;
+}
+
+.sec  {
+    width: 340px;
+    margin-left: -4px;
+    margin-top: 211px;
+    height: 181px;
+}
+
+h2 {
+    font-size: 49px;
+    margin-top: 114px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    margin-left: 53px;
+    position: absolute;
+}
+
+.division {
+    width: 657px;
+    height: 4px;
+    margin-left: 50px;
+    margin-top: 169px;
+    background-color: black;
+    position: absolute;
+}
+
+.division2 {
+    width: 657px;
+    height: 1px;
+    margin-left: 50px;
+    margin-top: 232px;
+    background-color: rgb(192, 192, 192);
+    position: absolute;
+}

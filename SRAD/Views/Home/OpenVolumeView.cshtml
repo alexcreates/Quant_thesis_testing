@@ -1,0 +1,81 @@
+@model Models.OpenVolumeobj.ProvidedOpenVolume
+
+<h3>Open Volume Thesis</h3>
+This calculator will show Steven Dux's Thesis on Open Volume evaultions and percentage chance <br>
+of the stock closing lower than the open for the day.<hr><hr>
+
+The way that this calculation is done is by evaluating the Day's Open Volume divided by the Float amount. 
+<i>Ex: </i> <b>x</b> = <i>(OpenVol / Float)</i> <br>
+by this Steven Dux thinks we can determine the probability of a roll over long scalp for shorting.
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<hr>
+<hr>
+<hr>
+
+We are Bench Testing the Following 15 Baselines:
+<h4><b>Float Size</b></h4>
+<ul>
+    <li>1 Million</li>
+    <li>2 Million</li>
+    <li>5 Million</li>
+    <li>10 Million</li>
+    <li>15 Million</li>
+    <li>20 Million</li>
+    <li>25 Million</li>
+    <li>40 Million</li>
+    <li>60 Million</li>
+    <li>80 Million</li>
+    <li>100 Million</li>    
+    <li>150 Million</li>
+    <li>200 Million</li>           
+</ul>
+
+With Fifty (50) records for each baseline
+
+
+<p>Please open the terminal to see the results: </p>
+<p>By clicking run we are executing an entry into sakila_db of 50 records at the given Float Baseline</p><br><br>
+
+
+
+<p>Only enter one of the values given in the list above</p>
+<br>
+
+<form asp-controller="Home" asp-action="GenOpenVolEquation" method="post">
+     <span asp-validation-for="providedRange"></span>
+        <label asp-for="providedRange">Provide Float Baseline:</label><br>
+        <input asp-for="providedRange" placeholder="0"/><br>
+    <button type="submit">create record</button>
+</form>
+
+<br>
+
+<form asp-controller="Home" asp-action="DeleteOpenVolume" method="post">
+    <button type="submit">wipe OpenVolume Table</button>
+</form>
+<br>
+
+<form asp-controller="Home" asp-action="ShowAllOpenVolumeRecords" method="post">
+    <button type="submit">show all OpenVolumeRecords</button>
+</form>
+
+<h3>OpenVolume Calculator</h3>
+<form asp-controller="Home" asp-action="CalculateOpenVol" method="post">
+     <span asp-validation-for="providedFloat"></span>
+        <label asp-for="providedFloat">Provide Float:</label><br>
+        <input asp-for="providedFloat" placeholder="0"/><br>
+    <span asp-validation-for="providedVolume"></span>
+        <label asp-for="providedVolume">Provide Volume:</label><br>
+        <input asp-for="providedVolume" placeholder="0"/><br>
+    <button type="submit">create record</button>
+</form>

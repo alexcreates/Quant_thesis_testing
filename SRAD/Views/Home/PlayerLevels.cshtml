@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="css/OARstyles.css">
+
+<div id="wrapper">
+    <div class="Starwars">
+        <img src="~/images/starwars.png">
+    </div>
+
+
+
+    <form asp-controller="Home" asp-action="CalcPlayerLevelResults" method="post">
+            <span asp-validation-for="PlayerLevel"></span>
+                <label asp-for="PlayerLevel">Player Level</label>
+                <input asp-for="PlayerLevel"/><br>
+            <button type="submit">update</button>
+        </form>
+</div>

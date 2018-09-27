@@ -1,0 +1,106 @@
+﻿@model Models.Stock
+@{
+    ViewData["Title"] = "About";
+}
+<h3><i>Welcome, </i>@ViewBag.User.FirstName @ViewBag.User.LastName</h3>
+<br>
+<br>
+<br>
+
+<h4><i>create record for new symbol</i></h4>
+<br>
+
+<form asp-controller="Home" asp-action="CreateRecord" method="post">
+    <span asp-validation-for="Symbol"></span>
+        <label asp-for="Symbol"></label>
+        <input asp-for="Symbol"/><br>
+    <span asp-validation-for="Last"></span>
+        <label asp-for="Last"></label>
+        <input asp-for="Last"/><br>
+    <span asp-validation-for="CompName"></span>
+        <label asp-for="CompName"></label>
+        <input asp-for="CompName"/><br>
+    <span asp-validation-for="ResPoint"></span>
+        <label asp-for="ResPoint"></label>
+        <input asp-for="ResPoint"/><br>
+    <span asp-validation-for="SupPoint"></span>
+        <label asp-for="SupPoint"></label>
+        <input asp-for="SupPoint"/><br>
+    <span asp-validation-for="RelativeVolume"></span>
+        <label asp-for="RelativeVolume"></label>
+        <input asp-for="RelativeVolume"/><br>
+    <span asp-validation-for="Comment"></span>
+        <label asp-for="Comment"></label>
+        <input asp-for="Comment"/><br>
+    <button type="submit">create record</button>
+</form>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+@{
+    @if(@ViewBag.StockList == null){
+        <h3>no records exist</h3>
+    }
+    else{
+        <table>
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Last</th>
+                    <th>Company Name</th>
+                    <th>Curr SupPoint</th>
+                    <th>Curr ResPoint</th>
+                    <th>Relative Volume</th>
+                    <th>Comment</th>                    
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var data in @ViewBag.StockList){
+                    <tr>
+                        <td>@data.Symbol</td>
+                        <td>@data.Last</td>
+                        <td>@data.CompName</td>
+                        <td>@data.SupPoint</td>
+                        <td>@data.ResPoint</td>
+                        <td>@data.RelativeVolume</td>
+                        <td>@data.Comment</td>
+                        <td><a href="showStock/@data.idstocks"><i>show</i></a></td>                                                                                                
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    }
+}
+
+
+<h2>Open Volume Bench Testing</h2>
+<hr>
+<p>This Thesis Calculates <i>Steven Dux's</i> Thesis on the <br>
+percentage that the symbol will close lower than the open for the day</p>
+<p><i>Challenge...</i> prove this to be true</p>
+<hr>
+<form asp-controller="Home" asp-action="ShowOpenVolView" method="post">
+    <button type="submit">openVol</button>
+</form>
+
+
+<h2> - <b>OAR</b> - (oscillating average range)</h2>
+<hr>
+<p>The oscillating average range calculates the <br>
+average size of the symbols recent oscillations <br>
+typically within a mean reversion or channel pattern <br>
+</p>
+<hr>
+<form asp-controller="Home" asp-action="ShowOarView" method="post">
+    <button type="submit">OAR</button>
+</form>

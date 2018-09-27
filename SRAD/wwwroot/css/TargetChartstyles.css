@@ -1,0 +1,68 @@
+.wrapper {
+    background-color: black;
+    height: 2000px;
+    width: 950px;
+    display: inline-block;
+}
+
+form {
+    margin-top: 50px;
+}
+
+label {
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 100;
+    padding-right: 30px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+}
+
+.description {
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-left: 40px;
+    font-size: 20px;
+    margin-top: 100px;
+    width: 500px;
+ 
+}
+
+h3 {
+    font-size: 51px;
+    font-weight: 100;
+    letter-spacing: 16px;
+    margin-bottom: 12px;
+    text-decoration: underline;
+}
+
+button {
+    margin-left: 293px;
+    margin-top: -59px;
+    height: 45px;
+    width: 180px;
+    position: absolute;
+    background: transparent;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
+img {
+    vertical-align: middle;
+    margin-top: -589px;
+    margin-left: 558px;
+    height: 508px;
+    position: absolute;
+}
+
+.hyperlinks a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: -26px;
+    padding-bottom: 30px;
+}

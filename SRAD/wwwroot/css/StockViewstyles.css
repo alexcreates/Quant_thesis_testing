@@ -1,0 +1,52 @@
+#division {
+    height: 254px;
+    background-color: black;
+    color: black;
+    font-weight: 100;
+    position: fixed;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: -20px;
+    width: 900px;
+}
+
+#wrapper {
+    margin-top: 400px;
+}
+footer {
+    display: none;
+}
+
+h2 {
+    margin-top: -261px;
+    color: white;
+    font-weight: 600;
+    font-size: 147px;
+    margin-left: 28px;
+    letter-spacing: 21px;
+    position: absolute;
+}
+
+h4 {
+    margin-top: -319px;
+    color: white;
+    font-weight: 100;
+    font-size: 14px;
+    margin-left: 0px;
+    letter-spacing: 9px;
+    position: absolute;
+}
+
+th {
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 20px;
+    padding-right: 86px;
+}
+
+
+
+
+.listheader p{
+    margin-left: 40px;
+}

@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+@model Models.User
+
+<h3>register</h3>
+
+<form asp-controller="Home" asp-action="Register" method="post">
+    <span asp-validation-for="FirstName"></span>
+        <label asp-for="FirstName">First Name</label>
+        <input asp-for="FirstName"/><br>
+    <span asp-validation-for="LastName"></span>
+        <label asp-for="LastName">Last Name</label>
+        <input asp-for="LastName"/><br>
+    <span asp-validation-for="Email"></span>
+        <label asp-for="Email"></label>
+        <input asp-for="Email"/><br>
+    <span asp-validation-for="Password"></span>
+        <label asp-for="Password"></label>
+        <input asp-for="Password"/><br>
+    <span asp-validation-for="ConfirmPassword"></span>
+        <label asp-for="ConfirmPassword">Confirm Password</label>
+        <input asp-for="Password"/><br>
+    <button type="submit">register</button>
+</form>

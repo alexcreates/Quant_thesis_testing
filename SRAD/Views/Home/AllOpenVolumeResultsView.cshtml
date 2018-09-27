@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="~/css/OpenVolume.css"/>
+<h2>Open Volume Records</h2><hr>
+These are scalable results using the float as a baseline<br>
+&<br> displays what occurs as people begin to populate the symbol<br><br><hr>
+<b>1</b>.) Here are 100 records for every baseline <br> 
+<b>2</b>.) There are 13 baseline points fixing the <b><i>float</i></b> <br>
+
+<ul>
+    <li>1 Million</li>
+    <li>2 Million</li>
+    <li>5 Million</li>
+    <li>10 Million</li>
+    <li>15 Million</li>
+    <li>20 Million</li>
+    <li>25 Million</li>
+    <li>40 Million</li>
+    <li>60 Million</li>
+    <li>80 Million</li>
+    <li>100 Million</li>    
+    <li>150 Million</li>
+    <li>200 Million</li>   
+</ul><hr>
+
+@{
+    if(@ViewBag.AllResults == null)
+    {
+        <h3>no records have been created</h3>
+    }
+    else
+    {
+        <table class="zebra">
+            <thead>
+                <th>
+                    <tr>
+                        <div id="FloatText">
+                            <b>Float</b>
+                            <div id="min">
+                                baseline
+                            </div>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div id="VolumeText">
+                            <b>Volume</b>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div id="ResultText">
+                            <b>Result</b>
+                        </div>
+                    </tr>                    
+                </th>
+            </thead>
+            <tbody>
+                @foreach(var data in @ViewBag.AllResults)
+                {
+                    <tr>
+                        <td>@data.RelativeFloat</td>
+                        <td>@data.Volume</td>
+                        <td>@data.Result</td>                        
+                    </tr>
+                }
+            </tbody>
+        </table><br>
+    }
+}
+
+<form asp-controller="Home" asp-action="ShowOpenVolView" method="post">
+    <button type="submit">back</button>
+</form>
+
+
+

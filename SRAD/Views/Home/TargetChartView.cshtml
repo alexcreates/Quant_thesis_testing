@@ -1,0 +1,61 @@
+@model Models.Chart
+    
+    <link rel="stylesheet" href="css/TargetChartstyles.css">
+    
+
+    
+
+    <div class="wrapper">
+
+        <div class="description">
+            <h3>Target Charts</h3>
+
+            <div class="hyperlinks">
+                <a href="ShowAllTargetCharts">show all charts</a> <a href="DeleteAllTargetCharts">delete all charts</a>                 
+            </div>
+           
+            <p>
+                Here we are calculating target charts for making profits in a small account size. <br>
+                Enter a whole dollar amount and that is calculated at each increment of +0.10<br>
+                This will create the range of that whole dollar up to the next whole dollar amount.<br>        
+            </p>
+        </div>
+
+        <form asp-controller="Home" asp-action="calculateTargetChart" method="post">
+            <span asp-validation-for="stockPrice"></span>
+                <label asp-for="stockPrice">Stock Price</label>
+                <input asp-for="stockPrice"/><br>
+            <span asp-validation-for="userCost"></span>
+                <label asp-for="userCost">Account Size</label>
+                <input asp-for="userCost"/><br>
+            <br><br><br>
+            <button type="submit">create chart</button>
+        </form>
+
+        @{
+            if(@ViewBag.Chart == null)
+            {
+                <h3>no chart in view bag</h3>
+            }
+            else{
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Stock Price</th>
+                            <th>Share Size</th>
+                            <th>User Cost</th>
+                            <th>Target Minimum</th>
+                            <th>Maximum stop losses</th>                        
+                            <th>Minimum Lock Winnings</th>                                                                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                    </tbody>
+                </table>
+            }
+        }
+        <img src="~/images/starwars.png">
+
+    </div> 
+    

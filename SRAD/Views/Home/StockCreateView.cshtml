@@ -1,0 +1,32 @@
+@model Models.Stock
+
+<link rel="stylesheet" href="css/StockCreateStyles.css">
+
+
+
+<div id="wrapper">
+    <h4>Create new symbol record</h4>
+    <form asp-controller="Home" asp-action="CreateRecord" method="post">
+        <span asp-validation-for="Symbol"></span>
+            <label asp-for="Symbol">Symbol</label>
+            <input asp-for="Symbol"/><br>
+        <span asp-validation-for="CompName"></span>
+            <label asp-for="CompName">Company Name </label>
+            <input asp-for="CompName"/><br>
+        <span asp-validation-for="Last"></span>
+            <label asp-for="Last">Last</label>
+            <input asp-for="Last"/><br>
+        <span asp-validation-for="SupPoint"></span>
+            <label asp-for="SupPoint">Support Point</label>
+            <input asp-for="SupPoint"/><br>
+        <span asp-validation-for="ResPoint"></span>
+            <label asp-for="ResPoint">Resistance Point</label>
+            <input asp-for="ResPoint"/><br>
+        <span asp-validation-for="Comment"></span>
+            <label asp-for="Comment">Comment</label>
+            <input asp-for="Comment"/><br>
+        <button type="submit">create record</button>
+    </form>
+</div>
+
+<img src="~/images/Curry-Leaves.png">

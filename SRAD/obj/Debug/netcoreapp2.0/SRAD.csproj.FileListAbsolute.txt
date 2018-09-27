@@ -1,0 +1,11 @@
+/Users/mac/Desktop/SRAD/bin/Debug/netcoreapp2.0/SRAD.deps.json
+/Users/mac/Desktop/SRAD/bin/Debug/netcoreapp2.0/SRAD.runtimeconfig.json
+/Users/mac/Desktop/SRAD/bin/Debug/netcoreapp2.0/SRAD.runtimeconfig.dev.json
+/Users/mac/Desktop/SRAD/bin/Debug/netcoreapp2.0/SRAD.dll
+/Users/mac/Desktop/SRAD/bin/Debug/netcoreapp2.0/SRAD.pdb
+/Users/mac/Desktop/SRAD/obj/Debug/netcoreapp2.0/SRAD.csprojResolveAssemblyReference.cache
+/Users/mac/Desktop/SRAD/obj/Debug/netcoreapp2.0/SRAD.csproj.CoreCompileInputs.cache
+/Users/mac/Desktop/SRAD/obj/Debug/netcoreapp2.0/SRAD.AssemblyInfoInputs.cache
+/Users/mac/Desktop/SRAD/obj/Debug/netcoreapp2.0/SRAD.AssemblyInfo.cs
+/Users/mac/Desktop/SRAD/obj/Debug/netcoreapp2.0/SRAD.dll
+/Users/mac/Desktop/SRAD/obj/Debug/netcoreapp2.0/SRAD.pdb

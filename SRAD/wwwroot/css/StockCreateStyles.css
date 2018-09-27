@@ -1,0 +1,74 @@
+#wrapper {
+    height: 900px;
+    background-color: black;
+    color: white;
+    font-weight: 100;
+    position: absolute;
+    font-size: 30px;
+}
+
+input {
+    border-radius: 8px;
+    width: 220px;
+    height: 34px;
+    font-size: 19px;
+    letter-spacing: 2px;
+    color: black;
+    font-weight: 400;
+}
+button {
+    background: transparent;
+    width: 190px;
+    margin-left: 558px;
+    margin-top: 28px;
+    height: 47px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    border-radius: 4px;
+}
+
+label {
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 33px;
+    margin-left: 400px;
+}
+
+form {
+    margin-top: 100px;
+    margin-left: 0px;
+    letter-spacing: 2px;
+    padding-right: 28px
+}
+
+img {
+    vertical-align: middle;
+    position: absolute;
+    height: 625px;
+    margin-left: -157px;
+    margin-top: 192px;
+}
+
+h4 {
+    color: white;
+    font-size: 48px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-left: 41px;
+    margin-top: 98px;
+    margin-bottom: -30px;
+}
+
+form button {
+    letter-spacing: 2px;
+}
+
+.field-validation-error {
+    font-size: 12px;
+    width: 180px;
+    text-align: left;
+    margin-left: 50px;
+    position: absolute;
+}

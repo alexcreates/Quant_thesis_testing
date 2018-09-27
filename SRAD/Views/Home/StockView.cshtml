@@ -1,0 +1,50 @@
+@model Models.Stock
+
+
+<link rel="stylesheet" href="~/css/StockViewstyles.css">
+<div id="division"></div>
+<div id="wrapper">
+    <h4>Stock View</h4>
+    @{
+        if(@ViewBag.Stock == null)
+        {
+            <h3><i>no results found....</i></h3>
+        }
+        else
+        {
+            <h2>@ViewBag.Stock.Symbol</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th> supPoint</th>
+                        <th> resPoint</th>
+                        <th> OAR Result </th>
+                        <th> updatedAt </th>                    
+                    </tr>
+                </thead>
+                <tbody>
+                   <tr>
+                        @foreach(var data in @ViewBag.SupPoints)
+                        {
+                            <td>@data.SupPoint</td>                                                
+                        }
+                        @foreach(var data in @ViewBag.ResPoints)
+                        {
+                            <td>@data.ResPoint</td>                                                
+                        }
+                        @foreach(var data in @ViewBag.OarPoints)
+                        {
+                            <td>@data.OarResult</td>                                                
+                        }
+                   </tr>
+                </tbody>
+            </table>
+        }
+    }
+
+    <h4>Most recent OAR Result: @ViewBag.Stock.OarResult</h4>
+
+</div>
+
+
+

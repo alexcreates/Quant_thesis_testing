@@ -62,13 +62,13 @@ namespace Models
         public string updatedAt {get; set;}
     }
 
-    public class OpenVolumeobj
+    public class Float_Volume
     {
         public double RelativeFloat {get; set;}
         public double Volume {get; set;}
         public double Result {get; set;}
 
-        public class ProvidedOpenVolume
+        public class Provided_Float_Volume
         {
             public double providedRange {get; set;} 
             public double providedFloat {get; set;}

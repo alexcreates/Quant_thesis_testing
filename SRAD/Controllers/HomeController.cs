@@ -10,7 +10,7 @@ using SRAD.Models;
 using Connection;
 using Microsoft.AspNetCore.Http;
 using static Models.User;
-using static Models.OpenVolumeobj;
+using static Models.F;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 
@@ -18,10 +18,10 @@ namespace SRAD.Controllers
 {
     public class HomeController : Controller
     {
-        private OpenVolumeFactories _factory;
+        private Float_VolumeFactories _factory;
         public HomeController()
         {
-            _factory = new OpenVolumeFactories();
+            _factory = new Float_VolumeFactories();
         }
 
         
@@ -48,29 +48,29 @@ namespace SRAD.Controllers
                 }
 
 
-        [Route("ShowOpenVolumeView")]
-        public IActionResult ShowOpenVolumeView()
+        [Route("ShowFloatVolumeView")]
+        public IActionResult ShowFloatVolumeView()
         {
-            ViewBag.AllOpenVolumeResults = _factory.GetAllOpenVolumeResults();
-            return View("OpenVolumeView");
+            ViewBag.AllFloatVolumeResults = _factory.GetAllFloatVolumeResults();
+            return View("FloatVolumeView");
         }
 
-        [Route("ShowOpenVolInfoGram")]
-        public IActionResult ShowOpenVolInfoGram()
+        [Route("FloVolInfoGram")]
+        public IActionResult ShowFloVolInfoGram()
         {
-            return View("OpenVolInfoGram");
+            return View("FloVolInfoGram");
         }
 
-        [Route("ShowAllOpenVolumeRecords")]
-        public IActionResult ShowAllOpenVolumeRecords()
+        [Route("ShowAllFloatVolumeRecords")]
+        public IActionResult ShowAllFloatVolumeRecords()
         {
-            ViewBag.AllResults = _factory.GetAllOpenVolumeResults();
-            return View("AllOpenVolumeResultsView");
+            ViewBag.AllResults = _factory.GetAllFloatVolumeResults();
+            return View("AllFloatVolumeResultsView");
         }
 
 
 
-        // Passing the string symbol is optional for adding multiple res and sup data points. 
+        // Passing the stringlt ShowStockCreateView() symbol is optional for adding multiple res and sup data points. 
         [Route("ShowOARView")]
         public IActionResult ShowOARView()
         {
@@ -126,7 +126,7 @@ namespace SRAD.Controllers
 
 
         [Route("ShowStockCreateView")]
-        public IActionResult ShowStockCreateView()
+        public IActionResult
         {
             return View("StockCreateView");
         }
@@ -272,34 +272,34 @@ namespace SRAD.Controllers
         }
 
         
-        //// The Open Vol Calculator        
-        [Route("CalculateOpenVol")]
-        public IActionResult CalculateOpenVol(ProvidedOpenVolume obj)
+        //// The Flo Vol Calculator        
+        [Route("CalculateFloVol")]
+        public IActionResult CalculateFloVol(ProvidedFloatVolume obj)
         {
             ViewBag.Results = (obj.providedVolume / obj.providedRange);
-            return View("OpenVolResultsView");
+            return View("FloVolResultsView");
         }
 
 
 
 
         // This calculates and creates records in the database
-        [Route("GenOpenVolEquation")]
-        public IActionResult GenOpenVolEquation(int providedRange)
+        [Route("GenFloVolEquation")]
+        public IActionResult GenFloVolEquation(int providedRange)
         {
-            _factory.CreateOpenVolTable(providedRange);
-            return View("OpenVolumeView");
+            _factory.CreateFloVolTable(providedRange);
+            return View("FloatVolumeView");
         }
 
 
 
         // This will query the records for a specified range of the fixed baseline FLOAT
 
-        [Route("ShowHistoricOpenVolByRequestedFloat")]
-        public IActionResult ShowHistoricOpenVolByRequestedFloat(int floatRequested)
+        [Route("ShowHistoricFloVolByRequestedFloat")]
+        public IActionResult ShowHistoricFloVolByRequestedFloat(int floatRequested)
         {
             ViewBag.Results =  _factory.GetRecordsByFloatRequest(floatRequested);
-            return View("OpenVolumeByRequestView");
+            return View("FloVolumeByRequestView");
         }
 
 
@@ -351,11 +351,11 @@ namespace SRAD.Controllers
         }
 
 
-        [Route("DeleteOpenVolume")]
-        public IActionResult DeleteOpenVolume()
+        [Route("DeleteFloatVolume")]
+        public IActionResult DeleteFloatVolume()
         {
-            _factory.DeleteOpenVolume();
-            return RedirectToAction("ShowOpenVolView");
+            _factory.DeleteFloatVolume();
+            return RedirectToAction("ShowFloatVolView");
         }
 
 
